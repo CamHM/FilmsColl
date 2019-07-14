@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons>
+      <ion-back-button [routerLink]="['/tabs/tab1']"></ion-back-button>
+      <ion-title> {{ optionLoaded.title }} </ion-title>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="danger">
+  <ion-grid *ngIf="movies">
+    <ion-row>
+      <ion-col>
+        <app-movie-preview *ngFor="let movie of movies" [favorite]="true" [movie]="movie"></app-movie-preview>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

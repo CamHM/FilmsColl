@@ -1,6 +1,55 @@
-// App Styles
-// ----------------------------------------------------------------------------
-// Put style rules here that you want to apply to the entire application. These 
-// styles are for the entire app and not just one component. Additionally, this 
-// file can hold Sass mixins, functions, and placeholder classes to be imported 
-// and used throughout the application.
+:root {
+  --ion-color-dark: #061321;
+  --ion-color-dark-rgb: rgb(6,19,33);
+  --ion-color-dark-contrast: #38AECC;
+  --ion-color-dark-contrast-rgb: rgb(61,193,226);
+  --ion-color-dark-shade: #040B14;
+  --ion-color-dark-tint: #091C30;
+
+  --ion-color-warning: #EAC435;
+  --ion-color-warning-rgb: rgb(234,196,53);
+  --ion-color-warning-contrast: #1F363D;
+  --ion-color-warning-contrast-rgb: rgb(31,54,61);
+  --ion-color-warning-shade: #C6A52D;
+  --ion-color-warning-tint: #FFD43A;
+
+  --ion-color-secondary: #38AECC;
+  --ion-color-secondary-rgb: rgb(56,174,204);
+  --ion-color-secondary-contrast: #0A1214;
+  --ion-color-secondary-contrast-rgb: rgb(10,18,20);
+  --ion-color-secondary-shade: #2D8FA8;
+  --ion-color-secondary-tint: #3DC1E2;
+
+  --ion-color-danger: #D72638;
+  --ion-color-danger-rgb: rgb(215,38,56);
+  --ion-color-danger-contrast: #fff;
+  --ion-color-danger-contrast-rgb: rgb(255,255,255);
+  --ion-color-danger-shade: #B2202E;
+  --ion-color-danger-tint: #FC2D42;
+
+  --ion-color-primary: #A2ACF4;
+  --ion-color-primary-rgb: rgb(162,172,244);
+  --ion-color-primary-contrast: #0A1214;
+  --ion-color-primary-contrast-rgb: rgb(10,18,20);
+  --ion-color-primary-shade: #97A0E5;
+  --ion-color-primary-tint: #A8B2FF;
+
+  --ion-color-tertiary: #D06386;
+  --ion-color-tertiary-rgb: rgb(209,99,134);
+  --ion-color-tertiary-contrast: #1F363D;
+  --ion-color-tertiary-contrast-rgb: rgb(31,54,61);
+  --ion-color-tertiary-shade: #B25573;
+  --ion-color-tertiary-tint: #E86F95;
+
+  --ion-color-success: #68BB39;
+  --ion-color-success-rgb: rgb(104,187,57);
+  --ion-color-success-contrast: #367F0C;
+  --ion-color-success-contrast-rgb: rgb(54,127,12);
+  --ion-color-success-shade: #569B2E;
+  --ion-color-success-tint: #7ADB41;
+}
+
+.pop-over-style .popover-content {
+  --min-width: 350px !important;
+  --max-height: 200px !important;
+}

@@ -1,9 +1,19 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Tab Three
+  <ion-toolbar color="dark">
+    <ion-title color="danger">
+      Favoritos
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content color="primary">
+  <ion-button (click)="clean()" color="dark">Borrar Favoritos</ion-button>
+  <ion-button (click)="refresh()" color="dark"><ion-icon name="refresh"></ion-icon></ion-button>
+  <ion-grid *ngIf="savedMovies">
+    <ion-row>
+      <ion-col>
+        <app-movie-preview *ngFor="let movie of savedMovies" [movie]="movie"></app-movie-preview>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

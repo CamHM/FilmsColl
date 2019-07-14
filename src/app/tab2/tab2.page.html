@@ -1,9 +1,18 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Tab Two
+  <ion-toolbar color="dark">
+    <ion-title color="success">
+      Buscar
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content color="warning">
+  <ion-searchbar (ionChange)="search($event)" debounce="250" showCancelButton="focus"></ion-searchbar>
+  <ion-grid *ngIf="movies">
+    <ion-row>
+      <ion-col>
+        <app-movie-preview *ngFor="let movie of movies" [favorite]="true" [movie]="movie"></app-movie-preview>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

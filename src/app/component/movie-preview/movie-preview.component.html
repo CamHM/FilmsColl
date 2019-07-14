@@ -1,0 +1,18 @@
+<ion-card color="dark">
+  <ion-card-content no-padding>
+    <ion-row>
+      <ion-col size="5" (click)="showDetails($event)">
+        <ion-img src="https://image.tmdb.org/t/p/w300/{{ movie.poster_path }}"></ion-img>
+      </ion-col>
+      <ion-col size="7" no-padding no-margin>
+        <ion-card-title color="success" (click)="showDetails($event)">{{ movie.title }}</ion-card-title>
+        <ion-card-subtitle color="success" (click)="showDetails($event)">{{ movie.release_date }}</ion-card-subtitle><br>
+        <ion-card-content>
+          <ion-label>Popularidad: {{movie.popularity.toFixed(2)}}</ion-label><br>
+          <ion-label>Lenguaje Original: {{movie.original_language}}</ion-label>
+        </ion-card-content>
+        <ion-button expand="full" fill="clear" *ngIf="favorite" (click)="saveMovie()"><ion-icon name="star"></ion-icon></ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-card-content>
+</ion-card>
